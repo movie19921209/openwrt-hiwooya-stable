@@ -636,7 +636,7 @@ config wifi-iface
 	option device   ra${i}
 	option network	lan
 	option mode     ap
-	option ssid     WRTnode${i#0}$(cat /sys/class/net/eth0/address|awk -F ":" '{print $5""$6 }'| tr a-z A-Z)
+	option ssid     HI-WOOYA${i#0}$(cat /sys/class/net/eth0/address|awk -F ":" '{print $5""$6 }'| tr a-z A-Z)
 	option encryption psk2
 	option key 12345678
 	option ApCliEnable '1'

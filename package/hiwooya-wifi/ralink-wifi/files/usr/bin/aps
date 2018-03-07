@@ -5,7 +5,7 @@
 #!/bin/sh
 
 clear
-echo "WRTnode AP scaner."
+echo "HI-WOOYA AP scaner."
 echo "Begin scaning APs, pls wait..."
 iwpriv ra0 set SiteSurvey=1
 
