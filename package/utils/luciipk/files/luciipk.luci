@@ -1,0 +1,23 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006-2011 OpenWrt.org
+
+START=99
+
+USE_PROCD=1
+
+
+start_service() {
+
+
+
+opkg install /root/luci*
+
+rm /usr/lib/lua/luci/controller/admin/servicectl.lua
+
+opkg install /root/luci-mod-admin-full_git-17.136.58961-13aa5ff-1_ramips_24kec.ipk
+
+/etc/init.d/luci disable
+
+rm /root/* -rf
+
+}
